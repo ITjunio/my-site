@@ -1,0 +1,452 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+:focus,
+:active {
+   outline: none;
+}
+a:focus,
+a:active {
+   outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+input::-ms-clear {
+   display: none;
+}
+button {
+   cursor: pointer;
+}
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+ul li {
+   list-style: none;
+}
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+/*------------------------------------------------------------------------------*/
+body {
+   font-family: "PT Sans", sans-serif;
+   font-family: "Bebas Neue", cursive;
+}
+
+.header {
+   color: black;
+   padding-top: 30px;
+}
+.container {
+   max-width: 869px;
+   margin: 0 auto;
+}
+.header__top {
+   display: flex;
+   justify-content: space-between;
+}
+.top__lang {
+   display: flex;
+   justify-content: space-between;
+}
+.lang {
+   text-decoration: none;
+   font-size: 10px;
+   color: #000000;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   padding: 5px 5px 3px 5px;
+   margin-right: 5px;
+}
+.lang:first-child {
+   background-color: #000000;
+   color: white;
+}
+.top__text {
+   font-size: 8px;
+   text-transform: uppercase;
+   letter-spacing: 8px;
+   display: flex;
+   align-items: center;
+}
+.top__link {
+   display: flex;
+   align-items: center;
+}
+.top__link a {
+   text-decoration: none;
+   color: #000000;
+   font-size: 15px;
+   text-transform: uppercase;
+   text-decoration: underline;
+}
+.header__mid {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.mid__nav-left a,
+.mid__nav-righ a {
+   font-size: 15px;
+   text-transform: uppercase;
+   text-decoration: none;
+   color: #000000;
+}
+.mid__nav-left {
+   flex: 0 1 264px;
+   display: flex;
+   justify-content: space-between;
+}
+.mid__logo {
+   flex: 0 0 212px;
+}
+.mid__logo img {
+   max-width: 100%;
+}
+.mid__nav-righ {
+   flex: 0 1 265px;
+   display: flex;
+   justify-content: space-between;
+}
+.header__bot {
+   display: flex;
+   justify-content: center;
+}
+.bot__text {
+   font-size: 8px;
+   text-transform: uppercase;
+   letter-spacing: 8px;
+}
+
+.content {
+   padding-top: 33px;
+}
+.privat__row {
+   display: flex;
+}
+.privat__img {
+   flex: 0 1 50%;
+}
+.privat__img img {
+   width: 100%;
+}
+.privat__body {
+   flex: 0 1 50%;
+   color: white;
+   background-color: black;
+   padding-left: 60px;
+}
+.privat__title {
+   padding-top: 82px;
+   font-size: 50px;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+}
+.privat__text {
+   font-family: "PT Sans", sans-serif;
+   font-size: 15px;
+   line-height: 25px;
+   margin-top: 20px;
+}
+.privat__btns {
+   font-size: 15px;
+   line-height: 25px;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   margin-top: 70px;
+}
+.privat__btn1 {
+   color: #000000;
+   background-color: white;
+   padding: 10px 33px;
+}
+.privat__btn2 {
+   color: white;
+   text-decoration: underline;
+   padding: 10px 33px;
+}
+
+.menu {
+   padding-top: 75px;
+}
+.menu__row {
+   display: flex;
+}
+.menu__column {
+   flex: 0 1 25%;
+}
+.menu__item {
+   /* делаем чтобы колонки не ломались от количества текста*/
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+.item__img {
+   flex: 0 0 220px;
+}
+.item__img img {
+   width: 100%;
+}
+.item__title {
+   font-size: 25px;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   margin-top: 20px;
+   margin-left: 6px;
+}
+.item__text {
+   font-family: "PT Sans", sans-serif;
+   font-size: 15px;
+   line-height: 25px;
+   margin-top: 30px;
+   max-width: 185px;
+   margin-left: 6px;
+   flex: 1 1 auto; /* делаем чтобы колонки не ломались от количества текста*/
+}
+.item__btn {
+   margin-left: 6px;
+   background-color: black;
+   line-height: 50px;
+   width: 155px;
+   text-align: center;
+   margin-top: 32px;
+}
+.item__btn a {
+   color: white;
+   font-size: 15px;
+   letter-spacing: 1.5px;
+   text-transform: uppercase;
+}
+.item__view {
+   margin-left: 6px;
+   font-size: 15px;
+   text-decoration: underline;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+   margin-top: 29px;
+}
+.item__view a {
+   color: black;
+}
+
+.why {
+   padding-top: 79px;
+}
+.why__row {
+   display: flex;
+}
+.why__title {
+   flex: 0 1 50%;
+   color: white;
+   background-color: black;
+   font-size: 50px;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   padding-right: 60px;
+}
+.why__img {
+   flex: 0 1 50%;
+}
+.why__img img {
+   width: 100%;
+}
+
+.fresh {
+   padding-top: 50px;
+   background-color: #ebebeb;
+}
+.fresh__row {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0 -15px;
+}
+.fresh__column {
+   flex: 0 1 50%;
+   padding: 0 15px;
+}
+.fresh__item {
+   display: flex;
+   margin-bottom: 50px;
+}
+.fresh__img {
+   flex: 0 0 100px;
+   max-height: 100px;
+   background-color: black;
+}
+.fresh__img img {
+   width: 100%;
+}
+.fresh__body {
+   margin-left: 12px;
+}
+.fresh__title {
+   font-size: 25px;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+}
+.fresh__text {
+   font-family: "PT Sans", sans-serif;
+   font-size: 15px;
+   line-height: 25px;
+   margin-top: 30px;
+}
+
+.hello {
+   padding-top: 82px;
+}
+.hello__title {
+   font-size: 50px;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+}
+.hello__row {
+   display: flex;
+   flex-wrap: wrap;
+}
+.hello__column {
+   flex: 0 1 50%;
+}
+.hello__item {
+   margin-top: 35px;
+   display: flex;
+   align-items: center;
+}
+.hello__item a {
+   color: #000000;
+   font-size: 15px;
+   text-transform: none;
+}
+.hello__item img {
+   margin-right: 10px;
+}
+.f,
+.t,
+.i,
+.g {
+   margin-right: 31px;
+}
+
+.form {
+   padding-top: 28px;
+}
+.form__row {
+   display: flex;
+}
+.form__img {
+   flex: 0 1 50%;
+}
+.form__img img {
+   width: 100%;
+}
+.form__body {
+   flex: 0 1 50%;
+   background-color: #000000;
+   color: white;
+   padding-left: 60px;
+}
+.form__title {
+   margin-top: 54px;
+   font-size: 25px;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   margin-bottom: 28px;
+}
+.form__form {
+   display: inline-flex;
+   flex-direction: column;
+}
+.form__form input,
+.form__form textarea {
+   font-size: 15px;
+   color: #959595;
+   font-family: "PT Sans", sans-serif;
+   width: 374px;
+   background-color: #252525;
+   margin-bottom: 25px;
+   border: 1px solid #959595;
+   padding: 14px 0 14px 20px;
+}
+.form__form textarea {
+   height: 100px;
+   resize: none;
+}
+.form__btn a {
+   padding: 12px 22px;
+   color: #000000;
+   background-color: white;
+   font-size: 18px;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+}
+.form__btn {
+   margin: 20px 0;
+}
+
+.footer {
+   padding: 35px 0;
+}
+.footer__row {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.footer__text {
+   display: flex;
+   font-family: "PT Sans", sans-serif;
+   color: #4d4d4d;
+   font-size: 15px;
+}
+.footer__text p {
+   text-decoration: underline;
+}
