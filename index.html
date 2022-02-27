@@ -17,7 +17,7 @@
       <div class="container">
          <div class="header__top">
             <div class="top__lang">
-               <a href="#" class="lang">EN</a>
+               <a href="#" class="lang active">EN</a>
                <a href="#" class="lang">RU</a>
                <a href="#" class="lang">ESP</a>
             </div>
@@ -25,13 +25,13 @@
             <div class="top__link"><a href="#">Online ordering</a></div>
          </div>
          <div class="header__mid">
-            <div class="mid__nav-left">
+            <div class="mid__nav-left header__nav">
                <a href="#" class="nav-left">ABOUT</a>
                <a href="#" class="nav-left">Menus</a>
                <a href="#" class="nav-left">Service Info</a>
             </div>
             <div class="mid__logo"><img src="img/logo.png" alt=""></div>
-            <div class="mid__nav-righ">
+            <div class="mid__nav-righ header__nav">
                <a href="#" class="nav-right">Gallery</a>
                <a href="#" class="nav-right">Friends</a>
                <a href="#" class="nav-right">Contact</a>
@@ -39,6 +39,11 @@
          </div>
          <div class="header__bot">
             <div class="bot__text">Catering</div>
+         </div>
+         <div class="header__burger">
+            <span></span>
+         </div>
+         <div class="header__menu">
          </div>
       </div>
    </header>
@@ -203,8 +208,8 @@
                   <input placeholder="Name" type="text" name="username" value="">
                   <input placeholder="E-mail or phone number" type="mail" name="mail" value="">
                   <textarea placeholder="Your message" name="text"></textarea>
+                  <button class="form__btn"><a href="#">Send message</a></button>
                </form>
-               <div class="form__btn"><a href="#">Send message</a></div>
             </div>
          </div>
       </div>
@@ -218,7 +223,8 @@
          </div>
       </div>
    </footer>
-
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+   <script src="js/script.js"></script>
 </body>
 
 </html>
